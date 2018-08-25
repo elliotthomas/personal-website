@@ -1,3 +1,417 @@
-body {
-	background-color: orange;
+/* General Styles*/
+
+:root {
+  font-size: 16px;
+  margin: 0;
 }
+
+body {
+	background-color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Logo SVG Styles*/
+
+ .css0{
+ 	fill:#ebebeb
+ }
+.html0{
+	fill:#E44D26;
+}
+.html1{
+	fill:#F16529;
+}
+.html2{
+	fill:#EBEBEB;
+}
+.html3{
+	fill:#FFFFFF;
+}
+
+.prime0{
+	fill:#07AA9E;
+}
+
+.mongo0{
+	fill:#FFFFFF;
+}
+.mongo1{
+	fill:#A6A385;
+}
+.mongo2{
+	fill:#499D4A;
+}
+
+.mongo3{
+	fill:#58AA50;
+}
+.post0{
+	fill:none;
+	stroke:#fff;
+	stroke-width:12.4651;
+	stroke-linecap:round
+	;stroke-linejoin:round
+}
+
+/* Image Styles*/
+
+.outline-image {
+	height: 500px;
+	width: 500px;
+	mix-blend-mode: multiply;
+		display:inline-block;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.logo-work {
+    height: 100px;
+    width: auto;
+    display: inline-block;
+    margin: auto 0;
+    margin-left: 2rem;
+}
+
+/* Page-Nav Styles*/
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	    box-sizing: border-box;
+}
+
+.nav {
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	position: relative;
+
+}
+
+.nav-link {
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1.4rem;
+	transition-property: color;
+	transition-duration: 1s;
+}
+
+.nav-link:hover {
+	color: #e0e0e0;
+}
+
+/* Block Styles*/
+
+.block-header {
+	text-align: center;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.block {
+background-color: #fafafa;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.block-work {
+background-color: #fafafa;
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0 2rem 0;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.block-work-tile-wrapper {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.block-work-tile {
+    background-color: #fafafa;
+    display: flex;
+    width: calc(50% - 10px);
+    height: 200px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.block-edu-tile{
+    justify-content: center;
+    display: flex;
+    width: calc(100% / 2);
+}
+
+.block-skills-tile {
+	    justify-content: center;
+    display: flex;
+    width: calc(100% / 3);
+    margin-bottom: 1rem;
+}
+
+.block-edu-right {
+	margin: 0 2rem;
+	text-align: left;
+	align-items: center;
+}
+
+/* Block Text Styles*/
+
+.name {
+	    height: 28px;
+	    position: relative;
+}
+
+.name:before {
+    content: '';
+    border-top: 1px solid #000;
+    height: 0px;
+    width: 113px;
+    left: -124px;
+    top: 12px;
+    position: absolute;
+    animation: intro-line 1s ease 0.2s 1 normal forwards;
+}
+
+.name:after {
+content: '';
+    height: 5px;
+    width: 5px;
+    left: -14px;
+    top: 10px;
+    position: absolute;
+    background-color: #000;
+}
+
+
+.block-header-text {
+	display:inline-block;
+	padding-top: 143px;
+}
+
+.block-skills-text {
+	display: inline-block;
+	    width: 110px;
+}
+
+.block-work-text {
+    display: inline-block;
+    width: 263px;
+    margin-left: 6rem;
+}
+
+.skills-text-header {
+    margin: .5rem 0 1.3rem 1.3rem;
+    font-size: 1rem;
+}
+
+.vocation {
+	margin-bottom: 0;
+}
+
+.location {
+	margin-top: 0;
+}
+
+.skills-list {
+	font-size: .7rem;
+
+}
+
+.school {
+	    font-size: 1.4rem;
+	    	font-weight: normal;
+	        margin: 1.6rem 0 1.4rem 0;
+}
+
+.city {
+	font-size: 1rem;
+		font-weight: normal;
+		margin:0;
+}
+
+.degree {
+	font-size: 1rem;
+		font-weight: normal;
+		margin:0;
+}
+
+.work-description {
+	    max-width: 350px;
+    margin: 0 auto;
+    font-size: .9rem;
+}
+
+.work-header {
+	    margin: 0 0 1rem 0;
+}
+
+.work-info-header {
+		font-size: 1.5rem;
+		margin:1.5rem 0 0 0;
+		position: relative;
+}
+
+.work-info-header:before {
+content: '';
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    height: 0;
+    width: 0;
+    left: -47px;
+    top: 12px;
+    position: absolute;
+    animation: work-animate 1s linear 0.2s 1 normal forwards;
+}
+
+.work-info-header:after {
+content: '';
+    height: 5px;
+    width: 5px;
+    left: -14px;
+    top: 10px;
+    position: absolute;
+    background-color: #000;
+}
+
+.work-info {
+	font-size: .8rem;
+	margin: 0;
+	position: relative;
+}
+
+.work-info-tech {
+    font-size: .6rem;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+width: calc(94%/3);
+    height: 50%;
+    vertical-align: middle;
+    line-height: 3;
+    text-align: center;
+}
+
+.website:before {
+    content: '';
+    border-top: 1px solid #000;
+    height: 0;
+    width: 0;
+    left: -47px;
+    top: 5px;
+    position: absolute;
+    animation: website-animate 1s ease 0.5s 1 normal forwards;
+}
+
+.website:after {
+content: '';
+    height: 5px;
+    width: 5px;
+    left: -14px;
+    top: 3px;
+    position: absolute;
+    background-color: #000;
+}
+
+.work-info-skills {
+    position: relative;
+    width: calc(100% - 20px);
+    height: 26%;
+    border: 1px solid #e0e0e0;
+}
+
+.work-info-skills:before {
+content: '';
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    height: 0;
+    width: 0;
+    left: -48px;
+    top: -40px;
+    position: absolute;
+    animation: work-animate 1s linear 0.2s 1 normal forwards;
+}
+
+.work-info-skills:after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    left: -14px;
+    top: 20px;
+    position: absolute;
+    background-color: #000;
+}
+
+
+
+.top-space {
+	margin:2rem 0 0 0;
+}
+
+.website {
+	text-decoration: underline;
+}
+
+@keyframes intro-line {
+  0% {
+    width: 0; }
+  100% {
+    width: 113px; } 
+}
+
+@keyframes work-animate {
+  0% {
+  	    height: 0;
+    width: 0;
+     }
+     50%{
+     	height: 62px;
+    width: 0;
+     }
+  100% {
+        height: 62px;
+    width: 33px;
+}
+}
+
+@keyframes website-animate {
+  0% {
+    width: 0;
+     }
+  100% {
+    width: 37px;
+}
+}
+
+
+
