@@ -1,3 +1,7 @@
+
+
+
+
 /* General Styles*/
 
 :root {
@@ -14,6 +18,14 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
+
+
+
+
+
+
+
 
 /* Logo SVG Styles*/
 
@@ -58,6 +70,27 @@ a {
 	;stroke-linejoin:round
 }
 
+.angular0{
+	fill:#B3B3B3;
+}
+	.angular1{
+		fill:#A6120D;
+	}
+	.angular2{
+		fill:#DD1B16;
+	}
+	.angular3{
+		fill:#F2F2F2;
+	}
+
+.jquery0{
+			fill:#0868AC;
+		}
+
+
+
+
+
 /* Image Styles*/
 
 .outline-image {
@@ -81,6 +114,17 @@ a {
     margin-left: 2rem;
 }
 
+.icon-logo {
+	display: inline-block;
+	position: relative;
+	height: 24px;
+	width: 24px;
+}
+
+
+
+
+
 /* Page-Nav Styles*/
 
 .container {
@@ -103,6 +147,7 @@ a {
 	width: 150px;
 	height: 30px;
 	margin-top: 20px;
+	margin-bottom: 0;
 	text-align: center;
 	font-size: 1.4rem;
 	transition-property: color;
@@ -112,6 +157,11 @@ a {
 .nav-link:hover {
 	color: #e0e0e0;
 }
+
+
+
+
+
 
 /* Block Styles*/
 
@@ -149,7 +199,6 @@ background-color: #fafafa;
 
 .block-work-tile-wrapper {
     margin: 0 auto;
-    margin-bottom: 2rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -184,6 +233,9 @@ background-color: #fafafa;
 	text-align: left;
 	align-items: center;
 }
+
+
+
 
 /* Block Text Styles*/
 
@@ -231,7 +283,7 @@ content: '';
 }
 
 .skills-text-header {
-    margin: .5rem 0 1.3rem 1.3rem;
+    margin: 2.5rem 0 0 1.3rem;
     font-size: 1rem;
 }
 
@@ -245,13 +297,16 @@ content: '';
 
 .skills-list {
 	font-size: .7rem;
+	list-style: none;
+	    padding-left: 1.3rem;
+	    font-style: italic;
 
 }
 
 .school {
 	    font-size: 1.4rem;
 	    	font-weight: normal;
-	        margin: 1.6rem 0 1.4rem 0;
+    margin: 1rem 0 1.4rem 0;
 }
 
 .city {
@@ -382,6 +437,83 @@ content: '';
 	text-decoration: underline;
 }
 
+.icon-header {
+	margin: 0 0 1.5rem 0;
+}
+
+
+/* FOOTER STYLES */
+ 
+footer {
+	display: block;
+	width: 100%;
+	background-color: rgb(255,255,255);
+	height: 100px;
+}
+
+.icon-block {
+    margin: 0 auto;
+    max-width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+.icon-link {
+	position: relative;
+}
+
+.icon-link-one:before {
+    content: '';
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    height: 0;
+    width: 0;
+    left: 100px;
+    top: 21px;
+    position: absolute;
+    	animation: icon-one-animate 1s linear 0.2s 1 normal forwards;
+
+}
+
+
+.icon-link:before {
+    content: '';
+    border-left: 1px solid #000;
+    height: 0;
+    width: 0;
+    left: 11px;
+    top: -31px;
+    position: absolute;
+    	animation: icon-animate 1s linear 0.5s 1 normal forwards;
+}
+
+
+.icon-link-one:after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    left: 98px;
+    top: 33px;
+    position: absolute;
+    background-color: #000;
+}
+
+.icon-link:after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    left: 9px;
+    top: -19px;
+    position: absolute;
+    background-color: #000;
+}
+
+
+
+
+
+/* Keyframes */
+
 @keyframes intro-line {
   0% {
     width: 0; }
@@ -412,6 +544,214 @@ content: '';
     width: 37px;
 }
 }
+
+@keyframes icon-one-animate {
+  0% {
+    height: 0;
+    width: 0;
+     }
+     50% {
+     	height:0;
+     	width: 117px;
+     }
+  100% {
+    height: 12px;
+    width: 117px;
+}
+}
+
+@keyframes icon-animate {
+  0% {
+    height: 0;
+     }
+  100% {
+    height: 12px;
+}
+}
+
+
+
+
+
+
+/* Media Screen Sizes */
+@media only screen and (min-width:601px) and (max-width: 858px) {
+	.work-info-skills:before, .website:before, 
+.work-info-header:before {
+		display:none;
+	}
+
+	.block-work-text {
+		    margin-left: 2rem;
+	}
+
+	.work-info-header {
+		font-size: 1.3rem;
+		 margin: 1.9rem 0 0 0;
+	}
+
+	.work-info {
+		font-size: .6rem;
+	}
+
+	.work-info-tech {
+width: calc(90%/3);
+    font-size: .4rem;
+	}
+
+	.website:after {
+		top: 2px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+.outline-image {
+		    height: 300px;
+    width: 300px;
+	}
+
+		.block-header-text {
+			    padding-top: 62px;
+			        margin-left: 52px;
+	}
+.name {
+	font-size:1.7rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+	body {
+		margin: 0;
+	}
+
+	.block {
+		    width: 100%;
+    display: block;
+        margin: 0 auto;
+	}
+
+	.block-skills-tile {
+		width: 100%;
+		margin-bottom: 3rem;
+		display: block;
+	}
+
+	.block-edu-tile {
+    width: 100%;
+    display: block;
+	}
+
+	.school {
+		    font-size: 1.8rem;
+		    margin: 0 0 1.4rem 0;
+	}
+
+	.city, .degree {
+		    font-size: 1.2rem;
+	}
+
+	.skills-list {
+	font-size: 1rem;
+	    padding-left: 0;
+
+}
+
+	.block-edu-right {
+		    margin: 0 auto;
+    display: block;
+    text-align: center;
+	}
+
+
+	.logo {
+		    height: 200px;
+    width: 200px;
+        margin: 0 auto;
+    display: block;
+	}
+
+	.block-skills-text {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+	}
+
+	.skills-text-header {
+		    margin: 1rem 0 1.3rem;
+		    font-size: 2rem;
+	}
+
+	.block-header-text {
+		    display: block;
+		        margin: 0 auto;
+    text-align: center;
+    padding-top: 0;
+	}
+
+	.outline-image {
+
+		    display: block;
+    margin: 0 auto;
+	}
+
+	.name:before {
+		display: none;
+	}
+
+	.container {
+		max-width: 100%;
+	}
+
+	.nav-link {
+width: calc(97.5%/3);
+	}
+
+	.block-work-tile {
+		width: 100%;
+	}
+
+	.block-work-text {
+		    margin-left: 5rem;
+	}
+
+	.work-info-header {
+		font-size: 1.18rem;
+		 margin: 1.9rem 0 0 0;
+	}
+
+	.work-info {
+		font-size: .6rem;
+	}
+
+	.work-info-tech {
+		    width: calc(92%/3);
+		    font-size: .5rem;
+	}
+
+	.website:after {
+		top: 2px;
+	}
+}
+
+
+@media only screen and (max-width: 400px) {
+
+	.logo-work {
+    margin-left: 1rem;
+	}
+
+	.block-work-text {
+		    margin-left: 4rem;
+	}
+
+	.nav-link {
+		    width: calc(96.5%/3);
+	}
+
+	}
+
+
 
 
 

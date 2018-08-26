@@ -1,32 +1,33 @@
-console.log('In script.js')
+console.log('in script js')
 
-window.onresize = function() {
-	var block = document.getElementsByClassName('block');
-	var blockSkills = document.getElementsByClassName('block-skills-tile');
-	var blockSkillsText = document.getElementsByClassName('block-skills-text');
-	var logos = document.getElementsByClassName('logo');
-	addBlockStyle(block);
-	addBlockStyle(blockSkills);
-	addMarginStyle(blockSkills);
-	addBlockStyle(blockSkillsText);
-	addMarginStyle(blockSkillsText);
-	addBlockStyle(logos);
-	addMarginStyle(logos);
-	console.log('in block skills', blockSkills);
-	var windowHeight = window.innerHeight;
-	var windowWidth = window.innerWidth;
-	windowWidth < 500 ? console.log('Under 500'): console.log('Still over 500');
-};
+var windowHeight;
 
-function addBlockStyle (array) {
-	for (var i = 0; i < array.length; i++) {
-		array[i].style.display = "block"
-	}
+init();
+
+function init () {
+	windowHeight = window.innerHeight;
+	addEventHandlers();
+
 }
 
-function addMarginStyle (array) {
-	for (var i = 0; i < array.length; i++) {
-		array[i].style.margin = "0 auto"
-	}
+function addEventHandlers () {
+	window.addEventListener('scroll', checkPosition)
+    window.addEventListener('resize', init)
 }
+
+function checkPosition() {
+	var elems = document.getElementsByClassName('social-link')
+	var firstElem = document.getElementById('social-link-one')
+
+		for (var i = 0; i < elems.length; i++) {
+			var posFromTop = elems[i].getBoundingClientRect().top;
+			console.log(posFromTop)
+			console.log(windowHeight)
+			if (posFromTop - windowHeight <= 0) {
+			firstElem.classList.add('icon-link-one');
+			elems[i].classList.add('icon-link');
+
+		}
+		}
+	}
 
