@@ -1,8 +1,13 @@
-console.log('in script js')
+
+//Global Variables
 
 var windowHeight;
 
+//On page Load
+
 init();
+
+//Functions
 
 function init () {
 	windowHeight = window.innerHeight;
@@ -30,4 +35,6 @@ function checkPosition() {
 		}
 		}
 	}
+
+
 
