@@ -5,6 +5,7 @@
   margin: 0;
 }
 
+
 body {
 	background-color: white;
 	font-family: 'Josefin Sans', sans-serif;
@@ -781,6 +782,14 @@ width: calc(97.5%/3);
 	}
 
 	}
+
+    /*Browser differences */
+
+    @-moz-document url-prefix() {
+        .icon-link-one::before {
+            top: 24px;
+        }
+}
 
 
 
