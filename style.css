@@ -548,6 +548,10 @@ footer {
     background-color: #000;
 }
 
+.experience-link {
+    color: blue;
+}
+
 /* Keyframes */
 
 @keyframes intro-line {
@@ -791,7 +795,4 @@ width: calc(97.5%/3);
         }
 }
 
-
-
-
-
+}
